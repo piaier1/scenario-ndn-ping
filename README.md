@@ -10,9 +10,9 @@ The code should also work with the latest version of ndnSIM, but it is not guara
     cd ns-dev
 
     git clone https://github.com/named-data-ndnSIM/ns-3-dev ns-3
-    (cd ns-3; git checkout ns-3.23-dev-ndnSIM-2.1)
-    git clone https://github.com/named-data-ndnSIM/ndnSIM ns-3/src/ndnSIM
-    (cd ns-3/src/ndnSIM; git checkout ndnSIM-2.1)
+              Optional:(cd ns-3; git checkout ns-3.23-dev-ndnSIM-2.1)
+    git clone -b ndnSIM-2.1 --recursive https://github.com/named-data-ndnSIM/ndnSIM ns-3/src/ndnSIM
+              Optional:(cd ns-3/src/ndnSIM; git checkout ndnSIM-2.1)
 
     git clone --recursive https://github.com/named-data-ndnSIM/scenario-ndn-ping
 
@@ -21,7 +21,7 @@ The code should also work with the latest version of ndnSIM, but it is not guara
     ./waf
     sudo ./waf install
 
-    cd ../my-simulations
+    cd ../scenario-ndn-ping
 
 After which you can proceed to compile and run the code
 
