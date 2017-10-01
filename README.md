@@ -11,6 +11,7 @@ The code should also work with the latest version of ndnSIM, but it is not guara
 
     git clone https://github.com/named-data-ndnSIM/ns-3-dev ns-3
               Optional:(cd ns-3; git checkout ns-3.23-dev-ndnSIM-2.1)
+    git clone https://github.com/named-data-ndnSIM/pybindgen.git pybindgen
     git clone -b ndnSIM-2.1 --recursive https://github.com/named-data-ndnSIM/ndnSIM ns-3/src/ndnSIM
               Optional:(cd ns-3/src/ndnSIM; git checkout ndnSIM-2.1)
 
